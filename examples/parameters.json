@@ -1,0 +1,10 @@
+[
+  { "ParameterKey": "OrgPrefix", "ParameterValue": "ACMECO" },
+  { "ParameterKey": "S3BucketNameOrgPrefix", "ParameterValue": "acme" },
+  { "ParameterKey": "RolePath", "ParameterValue": "/application-role/" },
+  { "ParameterKey": "GitHubOrg", "ParameterValue": "chadkluck" },
+  { "ParameterKey": "EnableApiGwCloudWatchLogs", "ParameterValue": "true" },
+  { "ParameterKey": "EnableS3ArtifactsBucket", "ParameterValue": "true" },
+  { "ParameterKey": "S3ModuleLocation", "ParameterValue": "63klabs-zenith-us-east-2" },
+  { "ParameterKey": "S3ModuleNamespace", "ParameterValue": "atlantis" }
+]
