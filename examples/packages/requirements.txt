@@ -1,0 +1,4 @@
+# Production dependencies - deployed to Lambda
+# For local development, also install requirements-test.txt and requirements-dev.txt
+
+requests==2.33.0

@@ -1,0 +1,6 @@
+# Test frameworks - needed in local dev and CI/CD, removed before Lambda packaging
+
+# Core testing frameworks
+pytest==9.0.3
+pytest-mock==3.14.0
+hypothesis==6.112.1
