@@ -291,6 +291,20 @@ The power is in composition. A hook runs tests after every task. Another hook up
 
 People forget. Hooks don't.
 
+**Pro Tip**: Just like steering documents, make your hooks reusable across projects/repositories.
+
+For example, if you have a hook that checks your GitHub repository for unassigned "approved for development" issues, assigns them to the logged in user, and automatically generates a Kiro spec directory and SPEC.md, don't hard-code the repository name.
+
+Resolve the repo dynamically at the top of the prompt. Have the agent run `gh repo view` once and reuse that value. 
+
+```bash
+gh repo view --json nameWithOwner --jq '.nameWithOwner'
+```
+
+You can also include specific project information within a steering document and refer to it from the hook. Maybe instead of GitHub issues you are using Jira via the CLI.
+
+Again, layers.
+
 ---
 
 ### Slide 18: Vibe Mode
